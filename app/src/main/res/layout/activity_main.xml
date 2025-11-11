@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvUser"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Пользователь: —"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etPairs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Список пар (например: USDRUB,EURRUB)"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnFetch"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Получить"/>
+
+        <TextView
+            android:id="@+id/tvRawJson"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Ответ (raw JSON) будет здесь"
+            android:paddingTop="8dp"/>
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:text="Курсы:"
+            android:layout_height="24dp"
+            android:layout_width="100dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRates"
+            android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnOpenSaved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Открыть сохранённые записи (ROOM)" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

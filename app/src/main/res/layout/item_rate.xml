@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvPair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PAIR"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RATE" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/btnSave" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Сохранить"/>
+            <Button android:id="@+id/btnEdit" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Редактировать" android:layout_marginStart="8dp"/>
+            <Button android:id="@+id/btnDelete" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Удалить" android:layout_marginStart="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
